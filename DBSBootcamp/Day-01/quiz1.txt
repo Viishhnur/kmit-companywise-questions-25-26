@@ -1,0 +1,425 @@
+Question 1:
+What is the base case for the recursive height calculation of a binary tree?
+a. When root is not NULL
+b. When root has one child
+c. When root is NULL
+d. When root has two children
+Answer: c. When root is NULL
+
+Question 2:
+What will be the output of the following program?
+public class Test {
+public static void main(String[] args) {
+int a = 5;
+int b = 10;
+System.out.println(a++ * --b);
+}
+}
+a. 40
+b. 55
+c. 50
+d. 45
+Answer: d. 45
+
+Question 3:
+What will be the output of the following program?
+class Test {
+public static void main(String[] args) {
+int x = 5;
+x += x++ + ++x;
+System.out.println(x);
+}
+}
+a. 16
+b. 18
+c. 17
+d. 19
+Answer: c. 17 (Very important x+=y is treated as x = x + y , eventhough x get's changed during the process the original value of x is still used when computing x = x + y => x = 5 + y in this case). 
+
+Question 4:
+What happens when this code is executed?
+class Test {
+public static void main(String[] args) {
+int x = 5;
+int y = ++x + x++ + --x;
+System.out.println(y);
+}
+}
+a. 17
+b. 16
+c. 15
+d. 18
+Answer: d. 18
+
+Question 5:
+What does this function do?
+Function func(Node root):
+if root is NULL:
+return 0
+return 1 + func(root.left) + func(root.right)
+a. Counts the number of nodes in the tree
+b. Finds the diameter of the tree
+c. Finds the height of the tree
+d. Counts the number of leaves
+Answer: a. Counts the number of nodes in the tree
+
+Question 6:
+What does the following pseudo-code do?
+Function fun(Node head):
+prev = NULL
+curr = head
+while curr is not NULL:
+next = curr.next
+curr.next = prev
+prev = curr
+curr = next
+return prev
+a. Finds the middle element
+b. Deletes the linked list
+c. Reverses the linked list
+d. Sorts the linked list
+Answer: c. Reverses the linked list
+
+Question 7:
+What happens when this code is executed?
+int num = 10;
+System.out.println((num > 5) ? (num < 20 ? "Within Range" : "Out of Range") : "Too Low");
+a. Within Range
+b. Too Low
+c. Out of Range
+d. Compilation Error
+Answer: a. Within Range
+
+Question 8:
+What will be printed?
+String s1 = "OCA";
+String s2 = "O" + "C" + "A";
+System.out.println(s1 == s2);
+a. false
+b. true
+c. Compilation Error
+d. Runtime Exception
+Answer: b. true
+
+Question 9:
+What does this function do?
+Function func(Node head):
+if head is NULL:
+return NULL
+return head.next
+a. Does nothing
+b. Deletes all nodes
+c. Deletes the last node
+d. Deletes the first node of the linked list
+Answer: d. Deletes the first node of the linked list
+
+Question 10:
+What happens when the following code is executed?
+for (int i = 0; i < 5; i++) {
+System.out.print(i + " ");
+}
+System.out.println("\n" + i);
+a. Runtime Error
+b. 0 1 2 3 4 5
+c. None of the above
+d. Compilation Error
+Answer: d. Compilation Error
+
+Question 11:
+What will be the output of the following program?
+System.out.println(10 + 20 + "Java" + 10 + 20);
+a. 30Java1020
+b. Compilation Error
+c. 30Java30
+d. Java30
+Answer: a. 30Java1020
+
+Question 12:
+What does this function implement?
+Function func(Queue Q, int val):
+if Q.rear == MAX_SIZE:
+return "Queue Overflow"
+Q.rear = Q.rear + 1
+Q[Q.rear] = val
+a. Dequeue operation
+b. Enqueue operation in a queue
+c. Push operation in a stack
+d. Insert at the beginning of a linked list
+Answer: b. Enqueue operation in a queue
+
+Question 13:
+What happens when the following function is executed on an empty queue?
+
+Function func(Queue Q):
+if Q.front == Q.rear:
+return "Queue Underflow"
+Q.front = Q.front + 1
+return Q[Q.front]
+
+a. The queue becomes empty
+b. The queue becomes full
+c. An element is removed from the queue
+d. "Queue Underflow" is returned
+Answer: d. "Queue Underflow" is returned
+
+Question 14:
+Which data structure is implemented by this function?
+Function func(Node S, int val):
+if S.top == MAX_SIZE:
+return "Overflow"
+S.top = S.top + 1
+S[S.top] = val
+a. Heap
+b. Deque
+c. Stack
+d. Queue
+Answer: c. Stack
+
+Question 15:
+What happens when the following code is executed?
+String s1 = "hello";
+String s2 = new String("hello");
+System.out.println(s1 == s2);
+System.out.println(s1.equals(s2));
+a. false false
+b. false true
+c. true false
+d. true true
+Answer: b. false true
+
+Question 16:
+What traversal does this function perform?
+Function traverse(Node root):
+if root is NULL:
+return
+traverse(root.left)
+print(root.data)
+traverse(root.right)
+a. Level-order
+b. Inorder
+c. Preorder
+d. Postorder
+Answer: b. Inorder
+
+Question 17:
+What will be the output of the following program?
+Integer a = 10;
+Integer b = 10;
+Integer c = 200;
+Integer d = 200;
+System.out.println(a == b);
+System.out.println(c == d);
+a. false false
+b. true false
+c. true true
+d. false true
+Answer: b. true false (Java caches Integer objects in the range -128 to 127, so == may return true for small values — similar caching applies to Byte, Short, Character (0–127), and Boolean.)
+
+Question 18:
+What is the output of the following pseudo-code?
+Queue Q = new Queue()
+enqueue(Q, 5)
+enqueue(Q, 10)
+enqueue(Q, 15)
+dequeue(Q)
+print(front(Q))
+a. 10
+b. 15
+c. 5
+d. Error
+Answer: a. 10
+
+Question 19:
+What will be printed when the following pseudo-code runs?
+
+Function func(Node head):
+if head is NULL:
+return
+print(head.data)
+func(head.next)
+
+For a linked list 1 -> 2 -> 3 -> NULL
+a. NULL
+b. 1 2 3
+c. 3 2 1
+d. Infinite loop
+Answer: b. 1 2 3
+
+Question 20:
+What will be the output of the following pseudo-code?
+
+struct Node {
+int data;
+Node next;
+}
+
+Function fun(Node head):
+	count = 0
+	while head is not NULL:
+	count = count + 1
+	head = head.next
+	return count
+	
+a. 4
+b. 5
+c. 6
+d. NULL
+Answer: a. 4
+
+Question 21:
+What will be the output of the following program?
+String str1 = "Java";
+String str2 = "Java";
+String str3 = new String("Java");
+System.out.println(str1 == str2);
+System.out.println(str1 == str3);
+a. false false
+b. true true
+c. false true
+d. true false
+Answer: d. true false
+
+Question 22:
+What does this function return?
+
+Function func(Node head):
+	slow = head
+	fast = head
+	while fast is not NULL and fast.next is not NULL:
+	slow = slow.next
+	fast = fast.next.next
+	return slow.data
+a. The middle node
+b. The first node
+c. The last node
+d. The head node
+Answer: a. The middle node
+
+Question 23:
+What does the following function return?
+
+Function func(Node root):
+	if root is NULL:
+	return MIN_VALUE
+	return max(root.data, func(root.left), func(root.right))
+
+a. Minimum value in the tree
+b. Sum of all values
+c. Maximum value in the tree
+d. Number of nodes
+Answer: c. Maximum value in the tree
+
+Question 24:
+What will happen when the following code runs?
+
+int[] arr = new int[5];
+System.out.println(arr[5]);
+
+a. NullPointerException
+b. Compilation Error
+c. 0
+d. ArrayIndexOutOfBoundsException
+Answer: d. ArrayIndexOutOfBoundsException
+
+Question 25:
+What does the following function implement?
+
+Function func(Deque D, int val):
+	if D.front == 0:
+	return "Overflow"
+	D.front = D.front - 1
+	D[D.front] = val
+	
+a. Insert in a priority queue
+b. Insert at the front in a deque
+c. Insert in a stack
+d. Insert at the rear in a queue
+Answer: b. Insert at the front in a deque
+
+Question 26:
+What happens when this code is executed?
+class Parent {
+	static void show() {
+	System.out.println("Parent");
+	}
+}
+class Child extends Parent {
+	static void show() {
+	System.out.println("Child");
+	}
+public static void main(String[] args) {
+	Parent obj = new Child();
+	obj.show();
+	}
+}
+a. Runtime Exception
+b. Child
+c. Parent
+d. Compilation Error
+Answer: c. Parent (obj is of type Parent, so Parent.show() is called.)
+
+Question 27:
+
+What is the output of the following program?
+
+class A {
+static void display() {
+System.out.println("Static A");
+}
+}
+class B extends A {
+static void display() {
+System.out.println("Static B");
+}
+}
+public class Test {
+public static void main(String[] args) {
+A obj = new B();
+obj.display();
+}
+}
+a. Compilation Error
+b. Runtime Exception
+c. Static A
+d. Static B
+Answer: c. Static A
+
+Question 28:
+
+What will be the output of the following code?
+int x = 10;
+int y = 5;
+System.out.println(x > y ? "Greater" : x == y ? "Equal" : "Smaller");
+
+a. Greater
+b. Compilation Error
+c. Equal
+d. Smaller
+Answer: a. Greater
+
+Question 29:
+
+What is the output of the following program?
+int x = 5;
+System.out.println(x > 2 || x++ < 10);
+System.out.println(x);
+
+a. false 5
+b. true 5
+c. true 6
+d. false 6
+Answer: b. true 5
+
+Question 30:
+
+What is the output of this pseudo-code if executed on a binary tree?
+Function func(Node root):
+if root is NULL:
+return 0
+return root.data + func(root.left) + func(root.right)
+
+a. Height of the tree
+b. Sum of all node values
+c. Number of nodes
+d. Maximum node value
+Answer: b. Sum of all node values
