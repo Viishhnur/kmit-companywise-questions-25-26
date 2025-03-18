@@ -1,0 +1,23 @@
+Round 1 - Technical
+1. Tell me about yourself.
+2. Asked me about one of my projects.
+3. ER diagram for a hospital management system - Asked me to draw it on HackerRank CodePair.
+4. Follow-up questions:
+    - How would I develop the HMS application using the ER diagram?
+    - What kind of UI would I build?
+    - How would I design the backend?
+    - How would I do authentication?
+    - How would I implement role-based access?
+5. OOPS - Abstract Classes vs Interfaces.
+6. Design Patterns in Java.
+7. Microservices Architecture.
+8. Asked me if I have knowledge of RDBMS and how I used SQL in my projects.
+9. Asked me to explain one of my other recent projects and follow-up questions:
+    - Why I used a specific tech stack over others.
+    - Asked to explain key features of the tech stacks I used.
+    - Where did I deploy my projects?
+10. How would I optimize the performance of a website?
+11. What is lazy loading?
+12. How did you use AI in your projects?
+13. Binary Search Tree implementation from scratch.
+14. Before ending the interview, she asked me if I had any questions - I asked her one question regarding the company.
