@@ -13,30 +13,103 @@ This initiative is meant to help all of us share and access **real interview exp
 - ✅ Helps juniors in future batches as well
 - ✅ Encourages collaborative learning and preparation
 
----
-
-## 🚀 How to Contribute
-
-Contributing is simple and highly appreciated! Here's how you can help:
-
-### ✍️ If You Attended an Interview:
-
-1. **Fork this repo**
-2. **Create a folder** with the company name (e.g., `Experian`, `EventBrite`, `Amazon`)
-3. Inside that folder, create subfolders for each round(create according to your convenience , give below is a sample structure need to follow):
-   ```
-   Amazon/
-   ├── Round 1 - MCQs/
-   ├── Round 2 - Technical/
-   └── Round 3 - HR/
-   ```
-4. Add `.md` files or `.txt` files inside each round describing:
-   - Questions asked(If DSA was asked try to mention the exact the leetcode question number)
-   - Topics covered
-   - Any tips or observations
-5. Once done, **send a Pull Request**
-
-🛑 **OR** simply share your experience with [@viishhnur](https://github.com/viishhnur) or [@varunReddyT](https://github.com/varunReddyT) — we’ll add it for you!
+> 🙌 _Together we prepare smarter, faster, and better._
 
 ---
 
+## 🚀 How to Contribute (Step-by-Step)
+
+> 💡 Even small contributions are valuable — don't hesitate to add your experience!
+
+### 🛠️ Step 1: Fork the Repository
+
+Click on the **Fork** button (top-right of the page) to create your own copy.
+
+### 🖥️ Step 2: Clone Your Fork
+
+```bash
+git clone https://github.com/Viishhnur/kmit-companywise-questions-25-26.git 
+cd kmit-companywise-questions-25-26
+```
+
+### 🔄 Step 3: Pull Latest Changes (Important if you’ve already contributed before!)
+
+Before making any changes:
+
+```bash
+git remote add upstream https://github.com/Viishhnur/kmit-companywise-questions-25-26.git
+git pull upstream main
+```
+
+### 📁 Step 4: Create Company Folder
+
+If not already present, create a folder with the **company name** (e.g., `Experian`, `Epam`, `Amazon`, etc.)
+
+Inside that, create subfolders for each interview round:
+
+```
+Amazon/
+├── Round 1 - MCQs/
+├── Round 2 - Technical/
+└── Round 3 - HR/
+```
+
+Inside each file, include:
+
+- ✅ Date of interview
+- ✅ Mode (Online/Offline)
+- ✅ Questions asked (If DSA, mention LeetCode number if possible)
+- ✅ Topics covered
+- ✅ Your experience and tips
+
+> 📦 You can also contribute general resources like `resume_tips.md`, `interview_prep.md` under a `Resources/` folder.
+
+### ✅ Step 5: Stage, Commit, and Push Your Changes
+
+```bash
+git add .
+git commit -m "Add Amazon Round 2 coding and HR questions"
+git push origin main
+```
+
+📌 **Write clear and meaningful commit messages**  
+Avoid generic messages like `Update file` or `Fix bug`.
+
+### 🔁 Step 6: Create a Pull Request
+
+Go to your fork on GitHub and click **"Compare & Pull Request"**, then submit it.
+
+---
+
+## 📝 Example Contribution Structure
+
+```
+Salesforce/
+├── Round 1 - Aptitude/
+│   └── questions.md
+├── Round 2 - Technical/
+│   └── coding_questions.md
+└── Round 3 - HR/
+    └── hr_questions.md
+
+Amazon/
+├── Round 1 - MCQ/
+├── Round 2 - Technical/
+└── Round 3 - HR/
+```
+
+---
+
+## ⭐ Spread the Word
+
+If this repository helps you:
+
+- Leave a ⭐ on GitHub
+- Share with your friends
+- Contribute back when you can
+
+Together we build, learn, and succeed! 🚀
+
+---
+
+> 💡 _"Knowledge shared is knowledge multiplied. Let’s make it count!"_
