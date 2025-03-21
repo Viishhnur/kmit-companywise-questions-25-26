@@ -32,7 +32,7 @@ git clone https://github.com/Viishhnur/kmit-companywise-questions-25-26.git
 cd kmit-companywise-questions-25-26
 ```
 
-### 🔄 Step 3: Pull Latest Changes (Only for previous contributors (if you are not one of them ignore this step))
+### 🔄 Step 3: Pull Latest Changes (Only for previous contributors (If you are not one of them ignore this step))
 
 Before making any changes:
 
