@@ -1,0 +1,80 @@
+
+1. Movie Ratings
+Alexa loves movies and maintains a list of negative and/or positive integer ratings for the movies in her collection. She's getting ready for a film festival and wants to choose some subsequence of movies from her collection to bring such that the following conditions are satisfied:
+
+The collective sum of their ratings is maximal.
+
+She must go through her list in order and cannot skip more than one movie in a row.
+
+In other words, she cannot skip over two or more consecutive movies. For example, if
+ratings = [1, -3, -2], she must include either the second number or the first and third numbers to get a maximal rating sum of -3.
+
+Example
+If ratings = [-3, 2, 4, -1, -2, -5],
+Her maximal choices are [2, 4, -2] for a sum of 4.
+
+Function Description
+Complete the function maximizeRatings in the editor below. The function must return an integer denoting the maximum possible rating sum for Alexa's chosen subsequence of movies without reordering them.
+
+maximizeRatings has the following parameter(s):
+ratings(ratings[0],....ratings[n-1]): an array of integers
+
+Constraints:
+1 ≤ n ≤ 10⁵
+-1000 ≤ ratings[i] ≤ 1000, where 0 ≤ i < n
+
+Input
+ratings: a list of integers of size n (1 ≤ n ≤ 10⁵)
+Each ratings[i] (where 0 ≤ i < n) is in the range -1000 to 1000
+
+Sample Case 0
+Input
+5  
+9  
+-1  
+-3  
+4  
+5  
+
+Output
+17
+
+Explanation
+Alexa picks the bolded items in ratings = [9, -1, -3, 4, 5] to get maximum rating:
+9 + 4 + 5 = 17.
+Thus, the answer is 17.
+**************************************************************************************************
+
+2. Cached Requests
+There are n services numbered from 1 to n in a system, and there are m requests to be processed. The service in which the iᵗʰ request is cached is denoted by cache[i], for all 1 ≤ i ≤ m. For any request, If the request is processed from its cached service, it takes 1 unit of time. Otherwise, it takes 2 units of time.
+
+Different services can process different requests simultaneously, but one service can only process one request at a time. Find the minimum time to process all the requests by allocating each request to a service.
+
+Example
+It is given that n = 3, m = 5, and cache = [1, 1, 3, 1, 1].
+If the 1st, 2nd, and 4th requests are assigned to the 1st service, it will take 1 unit of time each, or 3 units of time to process them in total.
+Assign the 3rd request to the 2nd service and the 5th request to the 3rd service. It takes 1 and 2 units of time to complete them, respectively. Therefore, all requests are processed in 3 units of time.
+
+Function Description
+Complete the function getMinTime in the editor below.
+
+getMinTime has the following parameters:
+	int n: the number of services in the system
+	int cache[m]: the service in which the request is cached (of length m)
+
+Returns
+int: the minimum time required to process all requests
+
+Constraints
+1 ≤ n, m ≤ 2 * 10⁵
+1 ≤ cache[i] ≤ n
+
+Sample Case 0
+Input
+n = 4  
+cache = [1, 2, 3, 4]
+Output
+1
+
+Explanation
+Each request is cached in a different service. Process all of them at once, which takes 1 unit of time.
