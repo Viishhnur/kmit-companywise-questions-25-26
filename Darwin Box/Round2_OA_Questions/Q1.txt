@@ -1,0 +1,15 @@
+Given an array of words, calculate the total number of distinct permutations possible by rearranging the characters of each word individually, and then multiplying the permutation counts of all words.
+
+Example:
+Input: ["too", "hot"]
+
+For "too":
+Total characters = 3
+Repeated character 'o' occurs 2 times
+Permutations = 3! / 2! = 6 / 2 = 3
+
+For "hot":
+All characters are distinct
+Permutations = 3! = 6
+
+Total permutations = 3 × 6 = 18
