@@ -1,3 +1,4 @@
+
 /*
 Minimum Operations to Balance Storage Bins
 📘 Problem Statement:
@@ -49,6 +50,36 @@ Explanation:
 Already balanced. No operation required.
 
  */
-public class Min_Ops_To_Manage_Storage_Bins {
+import java.util.*;
 
+public class Min_Ops_To_Manage_Storage_Bins {
+    long minOperations(List<Integer> items) {
+        int n = items.size();
+
+        long sum = 0L;
+        for(int val : items) {
+            sum += val;
+        }
+
+        long base = sum / n;
+
+        long rem = sum % n; // how many bins must be (base+1)
+        
+        // To minimize moves, match the smallest bins to the smallest targets.
+        // After sorting, the first (n-rem) bins should target = base,
+        // the last rem bins target = base+1.
+        Collections.sort(items);
+
+        long ops = 0;
+        for (int i = 0; i < n; ++i) {
+            long target = (i < n - rem ? base : base + 1);
+            if (items.get(i) > target) {
+                // any excess here must be moved out
+                ops += items.get(i) - target;
+            }
+        }
+        return ops;
+
+
+    }
 }
