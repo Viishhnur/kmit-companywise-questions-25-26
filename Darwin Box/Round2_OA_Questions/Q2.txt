@@ -1,0 +1,34 @@
+You are given n subtrees, each with 1 to 3 nodes, represented as arrays of the form [root, left, right], where -1 indicates a null child.
+
+Your task is to merge all the subtrees into a single Binary Search Tree (BST) by performing the following operation repeatedly:
+
+Choose two distinct subtree indices i and j (i ≠ j)
+
+The leaf node (either left or right) of the subtree at index i must match the root node of the subtree at index j
+
+If such a match exists, remove the matching leaf node from subtree i, and attach the subtree at j in its place
+
+The merge must preserve the BST property
+
+Repeat this process until all subtrees are merged into a single BST
+
+Example Input:
+
+csharp
+Copy
+Edit
+[
+  [2, 1, -1],
+  [3, 2, -1],
+  [5, 1, 4]
+]
+Merging Process:
+
+Subtree [3, 2, -1] has leaf 2 which is the root of [2, 1, -1] → Merge
+
+Subtree [5, 1, 4] has leaf 1, which is in merged tree → Merge
+
+Final BST structure satisfies BST rules
+
+Expected Output :
+3 2 5 1 4
