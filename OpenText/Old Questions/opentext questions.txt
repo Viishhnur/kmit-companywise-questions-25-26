@@ -1,0 +1,253 @@
+Slot-1
+
+Question 1
+
+Design a way to sort the list of positive integers in descending order according to frequency of the elements.The elements with higher frequency come before those with lower frequency .Elements with the same frequency come in the same order as they appear in the given list.
+
+input
+-----
+The first line of the input consists of an integer -num, representing the number of elements in the list(N).
+The second line consists of N space separated integers representing the elements in the list.
+
+output
+------
+Print N space-separated integers representing the elements of the list sorted according to the frequency of elements present in the given list
+
+
+Example
+-------
+
+input:
+19
+1 2 2 3 3 3 4 4 5 5 5 5 6 6 6 7 8 9 10
+
+output:
+5 5 5 5 3 3 3 6 6 6 2 2 4 4 1 7 8 9 10
+
+Explanation:
+------------
+
+The element 5 has highest frequency.
+The elements 3 and 6 have same frequencies.So their original order has been maintained in the output.
+The frequencies of rest of elements will be found and arranged in a similar way .
+So the output will be : 5 5 5 5 3 3 3 6 6 6 2 2 4 4 1 7 8 9 10.
+
+
+
+
+-------------------------------------------------------------------------------------------------------------
+
+Question 2
+
+
+The computer systems of N employees of a company are arranged in a row.A technical fault in the power supply has caused some of the systems to turn OFF while the others remain ON. The employees whose systems are OFF are unable to work.The company does not like to see
+employees sitting idle.So until the technical team can find the actual cause of the breakdown, the technical head has devised a temporary workaround for the OFF systems a ta minimum cost. They
+decide to connect all the OFF systems to the nearest ON system with the shortest possible length of cable. To make this happen, they
+calculate the distance of each system from the first system.
+
+Write an algorithm to help the technical head find the minimum length of cable they need to turn all the systems ON.
+
+Input
+-----
+The first line of the input consists of an integer- systemState_size,
+representing the number of systems (N).
+The second line consists of N space-separated integers
+systemState[1],systemState[2]...systemState[N],representing the initial state of each system, ON (1)or OFF (0).
+The third line consists of an integer - dist_size, representing the number of distances (M).
+The last line consists of M space-separated integers- dist(1),dist(2),......,dis([M], representing the distance of each system from the first
+system.
+
+
+Output
+------
+Print an integer representing the minimum length of cable that the technical head needs to turn all the systems ON.If no cable is needed then print 0.
+
+Constraints
+------------
+1<=systemState_ size, dist sizes <=10^5
+1<=dist[i] < dist[i+1] <= 10^9
+
+
+Note
+----
+It is guaranteed that at least one system is 
+ON and none of the systems are faulty.
+
+Example
+-------
+Input:
+3
+100
+3
+156
+
+Output:
+5
+
+Explanation:
+------------
+Length of cable required to connect the 2nd system to the 1st system = 4
+Length of cable required to connect the 3rdsystem to the 2nd system =1.
+Total length of cable =5(4+1).
+So the output is 5.
+
+
+
+
+-----------------------------------------------------------------------------------------------------------------
+Question 3
+----------
+
+Mr.Woods, an electrician for Timberland city, has made some faulty connections on eight street lights.The errors cause a street light to go OFF if the street lights adjacent to that light were both ON
+(represented as 1)or both OFF (represented as 0) on the previous night. Otherwise, the light will go ON as normal. The two street lights at the end of the road have only a single adjacent street light, so the
+light at the end can be assumed to be always OFF. The state of the lights on a particular day is considered for the following day, not for the same day.
+
+Because of this fault, people are having difficulty driving on the road at night.They have filed a complaint to the head of the highway
+administration. Based on this complaint the head has ordered a report of the state of street lights after M days.
+
+
+Write an algorithm to output the state of the street lights after the given M days
+
+Input
+------
+The first line of input consists of an integer-currentState_ size, representing the number of street lights (N).
+The next line consists of N space-separated
+integers -currentState, representing the current state of the street lights(i.e.,either 0 or 1).
+The last line consists of an integer-days, representing the number of days (M).
+
+Output
+-------
+Print eight space-separated integers representing the state of the street lights after M days.
+
+Constraints
+------------
+1 <= days <= 10^6
+
+Example
+-------
+Input:
+8
+1 1 1 0 1 1 1 1
+2
+
+Output:
+0 0 0 0 0 1 1 0
+
+
+Explanation:
+------------
+Adjacent to the street light at position 0 are street lights 0 ( assumption) and 1. So on the next day, it will be 1.
+Explanation: The street light at position 1 has its adjacent street lights both 1. So on the next day, it will be 0.
+The street light at position 2 had as one of its adjacent street lights 0 and the other one 1 . 
+So the next day , it will be 1.
+The street light at position 3 is 0 and both its adjacent street lights are 1 .So the next day the street light 
+at position 3 will be 0 only similarly , we can find the state of the remaining street lights for the next day. 
+So the state of the street lights after the first day is 1 0 1 0 1 0 0 1.
+after two days , the state of the street lights is 0 0 0 0 0 1 1 0.
+
+---------------------------------------------------------------------------------------------------------------
+Slot-2
+
+Question-1
+
+Mary is developing  an application on the concepts of prime numbers and factorization Among N numbers of the list 
+displayed on the application display , the application will highlight all the numbers that appear as many times on the
+display as the frequency of their prime factors.
+
+Write an algorithm to help Mary find all the numbers that appear as many times on the display as the frequency of their
+prime factors.
+
+Input:
+-------
+The first line of the input consists of an integer num, representing the size of the list(N),
+the second line consists of N space separated integers representing the numbers displayed on the application display.
+
+Output:
+-------
+Print M space-separated integers representing all the numbers that appears as many times on the display as the
+frequency of their prime factors in ascending order. if no such number is found in the given list then print -1.
+
+
+Constraints
+------------
+0 < num <=10^5
+
+0<= data <=10^6;where data represents a number on the display 
+
+Example
+-------
+input:
+7
+4 2 12 25 12 12 25
+
+output:
+2 12 25
+
+Explanation:
+2 has 1 prime factor.
+12 has 3 prime factors: 2,2,3
+25 has 2 prime factors: 5,5.
+2 is present one time , 12 is present 3 times, and 25 is present 2 times in the given list
+so the output is [2,12,25]
+
+
+-------------------------------------------------------------------------------------------------------------------
+
+Question 2
+
+In the game of chess, the queen can attack an opponent if the piece is located in the same row, same column, or same 
+diagonal.
+
+Write a program that takes the position of the queen and position of the opponent piece on an empty chessboard and 
+determine if the queen may attack the piece.
+
+Input
+------
+The first line of the input consists of an integer- cord_x1, representing the x coordinate of the queen;
+
+The second line of the input consists of an integer- cord_y1,representing the y coordinate of the queen;
+
+The third line of the input consists of an integer- cord_x2, representing the x coordinate of the opponent piece;
+
+The fourth line of the input consists of an integer- cord_y2,representing the y coordinate of the opponent
+piece.
+
+Output
+-------
+Print a string  "Yes" the queen can attack the opponent piece. Otherwise, print
+"No."
+
+
+Examples
+---------
+Example1:
+
+Input:
+4
+5
+6
+7
+
+Output:
+Yes
+
+Explanation:
+------------
+When the queen is located at position (4,5) and the opponent piece is located at position (6,7), the Queen may attack
+the piece in a diagonal attack
+
+
+Example 2:
+input:
+1
+1
+3
+2
+
+output:
+No
+
+Explanation:
+------------
+When the queen is located at position (1,1) pieces and the opponent piece is located at position (3,2), the queen may
+not attack the piece because it is not located in the same row, same column , or same diagonally.
