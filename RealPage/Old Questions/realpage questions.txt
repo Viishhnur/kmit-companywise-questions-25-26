@@ -1,0 +1,250 @@
+Task 1
+------
+
+Problem 1: Smallest integer with double the digit sum
+------------------------------------------------------
+Write a function 
+
+class Solution { public int solution(int N);}
+
+that, given an integer N, returns the smallest integer greater than N  where the sum of its digits 
+is twice as big as the sum of the digits of N.
+
+Examples:
+---------
+1.Given N=14, the function should return 19. The sum of digits of 19 (1+9=10) is twice as big as 
+the sum of digits of 14 (1+4=5).
+
+2.Given N=10, the function should return 11.
+
+3.Given N=99, the function should return 9999.
+
+Assumption:
+-----------
+N is an integer within the range [1..500].
+
+In your solution, focus on correctness; the performance of the solution will not be the focus of
+the assessment.
+
+Problem 2: Longest string with unique letters
+---------------------------------------------
+Concatenation is an operation that joins strings.For example, the concatenation of strings "smart"
+and "phone" is "smartphone".
+
+Concatenation can be expanded to more than two strings; for example,Concatenation "co","dil" and
+"ity" results in "codility".
+
+Given an array A consisting of strings, your function should calculate the length of the longest
+string S such that.
+
+*S is a concatenation of some of the strings from A.
+*Every letter in S is different.
+
+Write a function:
+	class Solution { public int solution(String[] A);}
+
+that given an array A consisting of N strings, calculates the length of the longest string S
+fulfilling the conditions above.If no such string exists, your function should return 0.
+
+Examples:
+---------
+1.Given A = ['co', 'dil', 'ity'], your function should return 5. A possible resulting string S
+could be "codil", "dilco", "coity" or "ityco".
+
+2.Given A = ['abc', 'yyy', 'def', 'csv'], your function should return 6. A possible resulting 
+string S could be "abcdef", "defabc", "defcsv" or "csvdef".
+
+3.Given A = ['potato', 'kayak', 'banana', 'racecar'], your function should return 0. It is 
+impossible to choose any of these strings as each of them contains repeating letters.
+
+4.Given A = ['eva', 'jqw', 'tyn', 'jan'], your function should return 9. One of the possible
+strings of this length is "evajqwtyn".
+
+Assumptions:
+------------
+*N is an integer within the range [1..8].
+*Each string in A consists of lowercase English letters.
+*The sum of lengths of strings in A does not exceed 100.
+
+In your solution, focus on correctness; the performance of your solution will not be the focus of 
+the assessment.
+
+Problem 3: Filling glasses with water
+--------------------------------------
+
+There are N empty glasses with a capacity of 1, 2, ..., N liters (there is exactly one glass of each unique capacity). You want to pour exactly K liters of water into the glasses. Each glass may be either full or empty (a glass cannot be partially filled). What is the minimum number of glasses that you need to contain K liters of water?
+
+Write a function:
+
+int solution(int N, int K);
+
+that, given two integers N and K, returns the minimum number of glasses that are needed to contain exactly K liters of water. If it is not possible to pour exactly K liters of water into glasses, then the function should return -1.
+
+Examples:
+----------
+1.Given N=5 and K=8, the function should return 2. There are five glasses with capacity 1, 2, 3, 4 and 5. You can use two glasses with capacity 3 and 5 to hold 8 liters of water.
+
+2.Given N=4 and K=10, the function should return 4. You must use all the glasses to contain 10 liters of water.
+
+3.Given N=1 and K=2, the function should return -1. There is only one glass with capacity 1, so you cannot pour 2 liters of water.
+
+4.Given N=10 and K=5, the function should return 1. You can use the glass with capacity 5.
+
+Assumptions:
+------------
+N is an integer within the range [1..1,000,000].
+
+K is an integer within the range [1..1,000,000].
+
+Task 2
+-------
+Write a function solution that, given an integer N, returns the maximum possible value obtainable
+by deleting one '5' digit from the decimal representation of N. It is guaranteed that N will 
+contain at least one '5' digit.
+
+Examples:
+---------
+Given N=15958, the function should return 1958.
+Given N=-5859, the function should return -589.
+Given N=-5000, the function should return 0. After deleting the '5', the only digits in the number
+are zeroes, so its value is 0.
+
+Assumptions:
+------------
+1.N is an integer within the range -999,995 to 999,995.
+2.N contains at least one '5' digit in its decimal representation.
+N consists of at least two digits in its decimal representation.
+
+In your solution, focus on correctness; the performance of your solution will not be the focus of
+the assessment.
+
+Task 3
+------
+For each of the following questions choose only one correct answer. 
+
+1.  What is a garbage collector pause? 
+
+A: It is the period when an application is stopped to clean up its unused memory
+B: It is a way to temporarily disable garbage collection.
+C: It happens when the garbage collector no longer has an opportunity to run.
+
+2.  Is the following statement valid in Java? float x = 3.14; 
+
+A: No, because 3.14 is a double literal
+B: Yes.
+C: Yes, but the compiler will emit a warning.
+
+3.  Is it good practice to make all methods public? 
+
+A: Yes, it allows you to test all of your methods.
+
+4.  Can you iterate over elements stored in a Java HashMap? 
+
+A: No, you cannot.
+B: Yes, but the order of the elements is undefined.
+C: Yes, and the elements are always sorted by the defined keys.
+
+5.  What is the best way to validate a telephone number in your application? 
+
+A: Write your own parser.
+B: Use a regular expression and check if the result matches your string.
+C: Parse it as an integer.
+
+6.  What would be a good way of describing streams in Java 8? 
+
+A: Streams are processing patterns that work on your data.
+B: Streams are data structures that store incoming data.
+C: Streams are APIs for streaming data in your web application.
+
+7.  What is the time complexity of appending an element to an ArrayList? 
+
+A: Always O(1).
+B: Always O(n).
+C: Amortized O(1).
+
+8.  What is the main purpose of buffered Input/Output streams? 
+
+A: To increase performance, as most I/O operations are done in a block.
+B: To be able to read/write the same file from many threads at once.
+C: It is a security measure against buffer overflows and denial-of-service attacks.
+
+9. What is the visibility of a class without an access modifier? 
+
+class Sample{
+.....
+}
+
+A: It is the same as public.
+B: It is public if it has the same name as a source file, otherwise it is the same as private.
+C: It is visible within the same package.
+
+10. What is the JAR file format? 
+
+A: It is a Java bytecode format.
+B: It is a platform-specific package type that allows applications to be launched.
+C: It is a package built on the ZIP format, aggregating Java class files, metadata and resources.
+
+11. What is an anonymous class? 
+
+A: It is a private class inside another class. It can only be used within that class.
+B: It is a way of writing more reusable code by allowing a class to implement an interface.
+C: It is a way to declare a class and instantiate an object at the same time.
+
+12.What is a lambda expression?
+
+A: It is a way of calling short Python snippets from Java.
+B: It is a shorthand way of coding to avoid boiler plate code.
+C: It is a new method in Hadoop that allows you to execute large sets of statements without tinkering with the exact filtering order of passed objects.
+
+13.What class modifier do you use when a given class should not be inherited?
+
+A: final.
+B: static.
+C: private.
+
+14.Can memory leak in Java?
+
+A: No, the garbage collector prevents it.
+B: Yes, you can still keep references to objects that you do not need anymore, and they will accumulate in memory.
+C: It depends on the garbage collector algorithm.
+
+
+
+15.How can you break out of a for loop inside a nested loop? 
+
+for(int i=0;i<10;i++){
+while(j<100){
+...
+//break;
+...
+  }
+}
+
+A:It is not possible with break.instead,you need to refactor your code (eg. use a separate method)
+B: Assign a label,"outerLoop:for(..."and then break outerLoop;
+C:Use return instead.
+
+16.Can you modify the object set?  
+
+final Set<String> set =new HashSet<>(Arrays.asList("first","second"));
+
+A: The set is immutable; it cannot be modified in any way.
+B: You cannot add  or remove elements to or from a set ,but you can reassign a different object as the set variable.
+C:You can add and remove elements to and from a set. but you cannot reassign a different object to the set.
+
+
+17.Which of following sentences in not true about Java Streams (8)? 
+
+A: One strea can be reused and visited many times
+B: The streams can be of infinite size and because of laziness, they can short circuit a lot of operations
+C:They can be paralellized easily
+
+18.What would the following code output?
+System.out.println(String.format("Id = %08.2f", 423.147));
+
+A: Id = 00000423.15.
+B: It will throw an exception.
+C: Id = 00423.15.
+
+
+

@@ -1,0 +1,95 @@
+
+1. Can you iterate over elements in a Java HashMap?
+
+A) No, you cannot
+B) Yes, but the order of the element is undefined
+C) Yes,and the elements are always sorted by the defined keys
+
+2.what is the best way to validate a telephone number in your application 
+
+A) Write your own parser
+B) Use a regular expression and check if the result matches your string
+C) Parse it as an integer
+
+3) What would be a good way of describing streams in Java 8 ?
+
+A) Streams are processing patterns that work on your data 
+B) Streams are data structures that store incoming data
+C) Streams are APIs for streaming data in your web application (e.g., websockets,video)
+
+
+4) What would this program output ?
+
+String value = "red";
+switch(value) {
+case "red" : System.out.println("FAIL");
+case "green" : System.out.println("OK");
+}
+
+A) FAIL OK
+B) FAIL
+C) It would not compile,as you cannot use switch with strings 
+
+
+5) Is the following assignment to a method parameter valid in Java ?
+
+void method(int a) {
+...
+a=4;
+...
+
+}
+
+A) No,it will produce a compile error
+B) Yes
+
+
+6)What is the time complexity of appending an element to an ArrayList ?
+
+A) Always O(1)
+B) Always O(n)
+C) Amortized O(1)
+
+
+7) What is the main purpose of buffered input/output streams ?
+
+A) To increase performance,as most I/O operations are done in blocks,
+B) To be able read/write the same file from many theads at once.
+C) It is a security measure against buffer overflows and denial-of-servoce attack
+
+
+
+8) what is the visibility of a class without an access modifier ?
+
+A) It as same as public
+B) It is public if it has the same name as a source file, otherwise it is the same as 
+C) It is visible within the same package. 
+
+
+9) What is the JAR File Format ?
+
+A) It is a Java bytecode format
+B) It is a platform specific package type that allows applications to be launched.
+C) It is a package built on the ZIP Format, aggregating Java class files,metadata
+
+
+Write a function solution that,given an integer N, returns the maximum possible value 
+obtainable by deleting one '5' digit from the decimal representation of N. It is 
+guranteed that N will contain at least one '5' digit .
+
+Example :
+1) Given N=15958, the function should return 1958
+
+2) Given N = -5859, the function should return -589
+
+3) Given N=-5000, the function should return 0. After deleting the '5', 
+the only digits in the number are zeros, so its value is 0. 
+
+Assume that :
+
+. N is an integer within the range 
+[-999,995..999,995];
+N contains at least one '5' digit in its decimal representation;
+N consists of at least two digits in its decimal representation.
+
+
