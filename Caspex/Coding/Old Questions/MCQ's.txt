@@ -1,0 +1,77 @@
+MCQ's 
+
+1.Which of the below are characteristic of cloud?
+
+i) On premises server room
+ii) High availability & reliability
+iii) Highly scalable 
+iv) Multi-sharing
+
+A)only (III)
+B)Only (I) and (II)
+C)only (II),(III) and (IV)
+D)Only (I)
+
+
+2. What will be the return value of the below given function if it is called as test(10,20,30)
+  
+  int test(int i,int j, int k)
+  {
+  if ((i>=j) && (K<j))
+    return i;
+  else
+   if (i>=j)
+    return test(i,k,j);
+  else
+   return test(j,i,k);
+  }
+  
+  
+  A)10
+  B)Garbage Value
+  C)30
+  D)20
+  
+  
+3.what will be the return value of the function given below if called as cal(10)
+   
+   
+   int cal(sum)
+   {
+      int f:=1, var := 1, c= s
+      do
+      {
+       f:=f+1
+       var:=var+f
+       c:=c+1
+       }while (var<=sum)
+       
+      return c;
+      }
+      
+A)10
+B)15
+C)4
+D)5
+
+
+4)When Elastic IPs get charged by AWS to customer?
+
+A) Elastic IP is a free service
+B) None of the given options
+C) Only when it is attached to EC2 instance
+
+5) Which of the following given statements are true about string class?
+
+i)Memory allocation for string objects happens dynamically
+ii)Memory wastage is more in case of string when compared to character array
+iii) string objects are more prone to array decay.
+iv)it is easier to implement character array than a string.
+
+
+A)only (i) and (iv)
+B)only (i),(ii) and (iii)
+C)only (ii) and (iii)
+D)only (i),(ii) and (iv)
+
+
